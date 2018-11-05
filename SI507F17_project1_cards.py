@@ -21,8 +21,9 @@ class Card(object):
         self.rank_num = rank # To handle winning comparison
 
     def __str__(self):
-        # return "{} of {}".format(self.rank_num,self.suit) 
-        return "{} of {}".format(self.rank, self.suit)
+        # return "{} of {}".format(self.rank_num,self.suit)
+        # return "{} of {}".format(self.rank, self.suit)
+        return "{0} of {1}".format(self.rank,self.suit)
 
 class Deck(object):
     def __init__(self): # Don't need any input to create a deck of cards
